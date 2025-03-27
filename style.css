@@ -85,6 +85,11 @@ body{
     cursor: pointer;
 }
 
+.navBtn-container .hir-btn a{
+    text-decoration: none;
+    color: white;
+}
+
 .navBtn-container .hir-btn:hover {
     transform: scale(1.2);
     transition: background 0.3s ease;
@@ -712,93 +717,6 @@ body{
     z-index: -1;
 }
 
-
-/* .accordion {
-    background: #0D0D0D;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    width: 80%;
-}
-
-
-.top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.top i {
-    font-size: 30px;
-    color: #FF7200;
-    margin-right: 15px;
-}
-
-.title {
-    font-size: 2.5rem;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.faqs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    background: #1A1A1A;
-    
-
-}
-
-
-.faq {
-    background: #1A1A1A;
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    transition: background 0.3s;
-}
-
-.faq:hover {
-    background: #2A2A2A;
-}
-
-.question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 8px;
-}
-
-.question h4 {
-    color: white;
-    font-size: 1.2rem;
-}
-
-.question i {
-    font-size: 1.5rem;
-    color:  #00BFFF;
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    color: #00BFFF;
-    font-size: 1.2rem;    
-}
-
-
-.answer.show {
-    max-height: 600px; 
-}
-
-
-.faq.active .question i {
-    transform: rotate(45deg);
-} */
-
-
 /* Accordion Container */
 .accordion {
     /* background: #0D0D0D; */
@@ -964,4 +882,577 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.aboutbody .fade{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:3.5rem ;
+}
+
+.aboutbody span{
+    font-weight: bold;
+    background: url('new.jpg') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutbody {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.abt {
+    text-align: left;
+    padding: 20px;
+    background:url("be.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); */
+}
+
+.abt h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.abt h1 span {
+    color: #FFD700;
+}
+
+.spa {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.spa a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.spa a:hover {
+    text-decoration: underline;
+}
+
+/* Section Container */
+.about-container {
+    max-width: 1000px;
+    margin:70px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    border-radius: 20px;
+    
+}
+
+
+
+.about-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.about-content {
+    margin-top: 15px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-content h2 {
+    color: #FFD700;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about-content p, .about-content ul {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.about-content ul {
+    padding-left: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+/* Project Roadmap Section */
+.roadmap-container {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #121212;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    text-align: center;
+}
+
+.roadmap-container h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.roadmap-item {
+    width: 80%;
+    padding: 15px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.roadmap-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.roadmap-item h3 {
+    color: #FFD700;
+    font-size: 1.5rem;
+}
+
+.roadmap-item p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container, .roadmap-container {
+        width: 90%;
+    }
+}
+
+.abm {
+    text-align: left;
+    padding: 20px;
+    background:url("be.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); */
+}
+
+.abm h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 0px 40px;
+}
+
+.abm h1 span {
+    color: #FFD700;
+}
+
+.abm .spa {
+    margin: 10px;
+    font-size: 1.3rem;
+    padding: 0px 40px;
+    padding-bottom: 10px;
+}
+
+.abm .spa a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.abm .spa a:hover {
+    text-decoration: underline;
+}
+
+.fadee{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:3.5rem ;
+}
+
+.abm span{
+    font-weight: bold;
+    background: url('new.jpg') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.abm {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+/* Contact Form */
+.contact-form, .contact-info {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+    width: 500px;
+}
+
+.contact-form h2, .contact-info h2 {
+    color: #FFD700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.contact-form p {
+    color:white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background: #FFD700;
+    color: #000;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #FFA500;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #FFD700;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+/* 🔹 When the user clicks inside the input */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+}
+
+
+/* 🔹 When the user actively clicks on the field */
+.contact-form input:active, 
+.contact-form textarea:active {
+    border-color: #ffa500;  /* Orange tint */
+    background-color: #444; /* Even lighter background */
+    color: white;
+}
+
+.firstsignup{
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.firstsignup h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bold;
+    background: url('new.jpg') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.firstsignup h2{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.firstsignup p{
+    font-size: 1.0rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.signup{
+    background: #1e1e1e;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.signup h2{
+    color: #FFD700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type="email"], input[type="password"], input[type="text"], textarea{
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+form .password-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    
+}
+
+form .password-container button{
+    padding: 15px;
+    margin-bottom:8px;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form .password-container button:hover{
+    background-color: #FFA500;
+}
+
+form .password-container button:active{
+    background-color: #FF8C00;
+}
+
+.signup .btn{
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+    
+}
+
+.signup .btn:hover{
+    background-color: #FFA500;
+}
+
+.signup .btn:active{
+    background-color: #FF8C00;
+}
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.0rem;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration-line: none;
+    color: #0056b3;
+    font-family: Arial, sans-serif;
+
+}
+.signup-link a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color:  #FFD700;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.signup p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 20px;
 }

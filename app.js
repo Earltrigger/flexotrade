@@ -103,3 +103,50 @@ faqs.forEach(faq => {
 });
 
 
+
+document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevents page refresh
+
+    // Show confirmation message
+    let messageElement = document.getElementById("form-message");
+    messageElement.style.display = "block";
+
+    // Clear form fields
+    this.reset();
+
+    // Hide the confirmation message after 3 seconds
+    setTimeout(() => {
+        messageElement.style.display = "none";
+    }, 3000); // 3000ms = 3 seconds
+});
+
+
+function togglePassword(event) {
+    event.preventDefault(); // Prevent form submission
+    let passwordField = document.getElementById("password");
+    let toggleBtn = document.getElementById("toggleBtn");
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleBtn.textContent = "Hide";
+    } else {
+        passwordField.type = "password";
+        toggleBtn.textContent = "Show";
+    }
+}
+
+function togglePassword() {
+    let passwordField = document.getElementById("password");
+    let toggleBtn = document.getElementById("toggleBtn");
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleBtn.textContent = "Hide";
+    } else {
+        passwordField.type = "password";
+        toggleBtn.textContent = "Show";
+    }
+}
+
+
+
