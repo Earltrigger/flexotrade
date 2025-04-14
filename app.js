@@ -1,19 +1,19 @@
-// const dropDownBtn = document.querySelector(".dropdown-btn");
-// const linksContainer = document.querySelector(".links-container");
+const dropDownBtn = document.querySelector(".dropdown-btn");
+const linksContainer = document.querySelector(".links-container");
 
-// // Toggle dropdown menu
+// Toggle dropdown menu
 
-// dropDownBtn.addEventListener("click", () => {
-//     linksContainer.classList.toggle("show-links");
+dropDownBtn.addEventListener("click", () => {
+    linksContainer.classList.toggle("show-links");
 
-//     if (linksContainer.classList.contains("show-links")) {
-//         dropDownBtn.innerHTML = '<i class="bi bi-x-lg"></i>'; // Cross icon
-//     } else {
-//         dropDownBtn.innerHTML = '<i class="bi bi-menu-button-wide"></i>'; // Menu icon
-//     }
-// });
+    if (linksContainer.classList.contains("show-links")) {
+        dropDownBtn.innerHTML = '<i class="bi bi-x-lg"></i>'; // Cross icon
+    } else {
+        dropDownBtn.innerHTML = '<i class="bi bi-menu-button-wide"></i>'; // Menu icon
+    }
+});
 
-// // Display loading animation
+/*Display loading animation*/
 // function showLoading() {
 //     document.querySelectorAll('.coin h3').forEach(el => el.textContent = 'Updating...');
 // }
@@ -41,37 +41,12 @@
 //     }
 // }
 
-// // Fetch prices every 10 seconds
-// setInterval(fetchCryptoPrices, 10000);
+// Fetch prices every 10 seconds
+setInterval(fetchCryptoPrices, 10000);
 
-// // Fetch prices when the page loads
-//  fetchCryptoPrices();
+// Fetch prices when the page loads
+ fetchCryptoPrices();
 
-// const faqs = document.querySelectorAll('.faq');
-// let openFaq = null;
-
-// faqs.forEach(faq => {
-//     faq.addEventListener('click', () => {
-//         const answer = faq.querySelector('.answer');
-//         const icon = faq.querySelector('.fa');
-
-//         if (answer.classList.contains('show')) {
-//             answer.classList.remove('show');
-//             icon.classList.replace('fa-minus-circle', 'fa-plus-circle');
-//         } else {
-//             if (openFaq && openFaq !== faq) {
-//                 const openAnswer = openFaq.querySelector('.answer');
-//                 const openIcon = openFaq.querySelector('.fa');
-//                 openAnswer.classList.remove('show');
-//                 openIcon.classList.replace('fa-minus-circle', 'fa-plus-circle');
-//             }
-            
-//             answer.classList.add('show');
-//             icon.classList.replace('fa-plus-circle', 'fa-minus-circle');
-//             openFaq = faq;
-//         }
-//     });
-// });
 
 const faqs = document.querySelectorAll('.faq');
 let openFaq = null;
@@ -135,18 +110,23 @@ function togglePassword(event) {
     }
 }
 
-function togglePassword() {
-    let passwordField = document.getElementById("password");
-    let toggleBtn = document.getElementById("toggleBtn");
 
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        toggleBtn.textContent = "Hide";
-    } else {
-        passwordField.type = "password";
-        toggleBtn.textContent = "Show";
-    }
-}
+
+// document.getElementById('toggle').addEventListener('click', function() {
+
+//     const passwordField = document.getElementById('pass');
+//     const toggleButton = document.getElementById('toggle');
+
+//     if (passwordField.type === 'password') {
+//         passwordField.type = 'text'; 
+//         toggleButton.textContent = 'Hide';  
+//     } else {
+//         passwordField.type = 'password';  
+//         toggleButton.textContent = 'Show'; 
+//     }
+// });
+
+
 
 
 

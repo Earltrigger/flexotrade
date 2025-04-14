@@ -12,7 +12,10 @@ body{
     font-family: "poppins";
     background: #1c1c1c;
     height: 100vh;
-    width: 100vw;   
+    width: 100vw;  
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar-container{
@@ -96,22 +99,16 @@ body{
     background: #a8540f;
 }
 
-/* Specific Colors for Each Icon */
-.facebook { color: #1877F2; }
-.twitter { color: #1DA1F2; }
-.instagram { color: #E4405F !important; }
-.linkedin { color: #0077B5; }
-
 .dropdown-btn{
     background: none;
     border: none;
     font-size: 30px;
     color: #fff;
-    display: none;
+    display:none;
 }
 
 .hero{
-    margin-top: 120px;
+    margin-top: 70px;
     margin-left: 150px;
     display: flex;
     align-items: center;
@@ -991,13 +988,6 @@ footer {
     margin-bottom: 8px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-container, .roadmap-container {
-        width: 90%;
-    }
-}
-
 .abm {
     text-align: left;
     padding: 20px;
@@ -1159,14 +1149,14 @@ footer {
 
 }
 
-/* 🔹 When the user clicks inside the input */
+/* When the user clicks inside the input */
 .contact-form input:focus, 
 .contact-form textarea:focus {
     outline: none;
 }
 
 
-/* 🔹 When the user actively clicks on the field */
+/*When the user actively clicks on the field */
 .contact-form input:active, 
 .contact-form textarea:active {
     border-color: #ffa500;  /* Orange tint */
@@ -1378,26 +1368,18 @@ form .password-container button:active{
     margin-top: 20px;
 }
 
-@media(max-width:1300px){
-    .container{
-        padding: 20px 60px;
-    }
-    .hero{
-        flex-direction: column;
-    }
-    .hero-img-container{
-        align-items: center;
-        justify-items:center;
-    }
-}
+ @media (max-width: 768px){
 
-@media(max-width:1000px){
-    .container{
-        padding: 20px 50px;
+    .logo-text{
+        border-radius: 4px;
+        font-size: 20px;
+        font-weight: bold;
+        background: url('new.jpg') no-repeat center;
+        background-size: cover;
+         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .dropdown-btn{
-        display: block;
-    }
+    
     .links-container{
         position: absolute;
         background: #181818;
@@ -1407,10 +1389,10 @@ form .password-container button:active{
         left: 0%;
         margin: auto;
         padding: 20px;
-        height: 100vh;
+        height:fit-content;
         z-index: 100;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         transition: 0.3s ease-in-out;
     }
     .show-links{
@@ -1419,91 +1401,136 @@ form .password-container button:active{
     .links-container li a{
        font-size: 17px;
     }
-    .hero{
-        margin: 1rem;
-    }
-    .hero-head-text{
-        font-size: 30px;
-    }
 
-    .hero header{
+    .navBtn-container{
+        display: flex;
         align-items: center;
-        margin-top: 20px;
-    }
-
-    .hero-btn-container{
-        margin-left: -270px;
-        padding: 10px;
-        display: block;
-        border: none;
-        cursor: pointer;
-        color:white;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.0rem;
-        transition: background-color 0.2s ease;
-        margin-top: -20px;
-        margin-bottom: 10px;
+        gap: 20px;
+        
     }
     
+    .navBtn-container .hir-btn {
+        padding:  7px;
+        font-size: 0.7rem;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: #ff7200 ;
+        cursor: pointer;
+    }
+    
+    .navBtn-container .hir-btn a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navBtn-container .hir-btn:hover {
+        transform: scale(1.2);
+        transition: background 0.3s ease;
+        background: #a8540f;
+    }
+
+    .coin-list {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 5px; /* Space between buttons */
+        justify-items: center; /* Centers the buttons horizontally */
+        align-items: center; /* Centers the buttons vertically */
+        cursor: pointer;
+       
+        
+    }
+
+    .hero{
+        margin-top: 100px;
+        margin-left: 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero header {
+        margin-top: -35px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+        max-width: 50%; /* Adjust width to control spacing */
+    }
+    .hero-head-text .coloered-text{  
+        font-size: 30px;
+    }
+    
+    .hero-head-text{
+        font-size: 30px;
+        font-weight: bold;
+    }
     .hero-description{
-        font-size: 14px;
-        margin-top: 1rem;
+        font-size: 15px;
+        font-weight: bold;
+        max-width: 500px;
     }
-    .hero-img{
-        width:0% auto;
-    }
-
-    .coin-list{
-     padding:20px;
-    }
-
-}
-
-@media(max-width:768px){
-    .container{
-        padding: 10px 10px;
-    }
-    .stats-container{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
-    .nav-btn-container{
-        display: none;
-    }
-}
-
-@media(max-width:368px){
     .hero-btn-container{
-        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-top: -30px;
+        gap: 20px;
     }
-}
+    
+    #hire-btn{
+        margin-top: 20px;
+        font-size: 0.7rem;
+        font-family:monospace;
+        font-weight: bold;
+        border: none;
+        padding: 8px;
+        border-radius: 30px;
+        color: #fff;
+        background-color: #ff7200 ;
+        cursor: pointer;
+    }
+    
+    #hire-btn:hover {
+        background: #a8540f;
+        transition: background 0.3s ease;
+    }
+    
+    .hero-img-container {
+        margin-right: 240px; /* Adjust space between image and text */
+        width: 550px;
+    }
+    
+    .hero-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: -170px;
+    
+    }
 
+    .coin {
+        font-size: 10px;
+        padding: 15px 20px;
+    }
 
+    .coin img {
+        width: 25px;
+        height: 25px;
+    }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    #section-three, #section-four {
-        flex-direction: column;
+    .coin h3 {
+        width: auto;
         text-align: center;
     }
-}
 
-@media (max-width: 768px) {
-    #coinlist, #section-one, #section-two, #section-three, #section-four, #section-five, #footer-container {
-        padding: 30px;
+    .dropdown-btn{
+        display: block;
     }
-    #section-four {
-        grid-template-columns: 1fr;
+    .navbar{
+        margin: 0px 90px;
     }
 }
 
-@media (max-width: 480px) {
-    #coinlist, #section-one, #section-two, #section-three, #section-four, #section-five, #footer-container {
-        padding: 20px;
-    }
-    #section-three {
-        flex-direction: column;
-    }
-}
+
+    
