@@ -42,10 +42,10 @@ dropDownBtn.addEventListener("click", () => {
 // }
 
 // Fetch prices every 10 seconds
-setInterval(fetchCryptoPrices, 10000);
+// setInterval(fetchCryptoPrices, 10000);
 
 // Fetch prices when the page loads
- fetchCryptoPrices();
+//  fetchCryptoPrices();
 
 
 const faqs = document.querySelectorAll('.faq');
