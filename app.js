@@ -14,38 +14,38 @@ dropDownBtn.addEventListener("click", () => {
 });
 
 /*Display loading animation*/
-// function showLoading() {
-//     document.querySelectorAll('.coin h3').forEach(el => el.textContent = 'Updating...');
-// }
+ function showLoading() {
+     document.querySelectorAll('.coin h3').forEach(el => el.textContent = 'Updating...');
+ }
 
-// // Fetch crypto prices from CoinGecko API
-// async function fetchCryptoPrices() {
-//     showLoading();
-//     try {
-//         const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,dogecoin&vs_currencies=usd');
-//         const prices = await response.json();
+ // Fetch crypto prices from CoinGecko API
+ async function fetchCryptoPrices() {
+    showLoading();
+     try {
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,dogecoin&vs_currencies=usd');
+         const prices = await response.json();
 
-//         // Smoothly update prices with a fade-in effect
-//         document.querySelectorAll('.coin h3').forEach((el, index) => {
-//             el.style.opacity = 0;
-//             setTimeout(() => {
-//                 if(index === 0) el.textContent = `$${prices.bitcoin.usd}`;
-//                 if(index === 1) el.textContent = `$${prices.ethereum.usd}`;
-//                 if(index === 2) el.textContent = `$${prices.dogecoin.usd}`;
-//                 el.style.opacity = 1;
-//             }, 500);
-//         });
+        // Smoothly update prices with a fade-in effect
+         document.querySelectorAll('.coin h3').forEach((el, index) => {
+             el.style.opacity = 0;
+             setTimeout(() => {
+                 if(index === 0) el.textContent = `$${prices.bitcoin.usd}`;
+                 if(index === 1) el.textContent = `$${prices.ethereum.usd}`;
+                if(index === 2) el.textContent = `$${prices.dogecoin.usd}`;
+                el.style.opacity = 1;
+            }, 500);
+         });
 
-//     } catch (error) {
-//         console.error('Error fetching prices:', error);
-//     }
-// }
+     } catch (error) {
+         console.error('Error fetching prices:', error);
+     }
+ }
 
-// Fetch prices every 10 seconds
-// setInterval(fetchCryptoPrices, 10000);
 
-// Fetch prices when the page loads
-//  fetchCryptoPrices();
+ setInterval(fetchCryptoPrices, 10000);
+
+
+  fetchCryptoPrices();
 
 
 const faqs = document.querySelectorAll('.faq');
